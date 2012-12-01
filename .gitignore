@@ -3,3 +3,8 @@
 /nbd.mod.c
 /*.ko
 /*.o
+/.nbd.ko.cmd
+/.nbd.mod.o.cmd
+/.nbd.o.cmd
+/.tmp_versions/nbd.mod
+/Makefile.orig
