@@ -8,7 +8,8 @@ clean:
 
 install:
 	rmmod nbd; \
-	cp nbd.ko /lib/modules/`uname -r`/kernel/drivers/block/
+	mkdir -p /lib/modules/`uname -r`/extra/drivers/block/
+	cp nbd.ko /lib/modules/`uname -r`/extra/drivers/block/
 	depmod -a
 	modprobe -v nbd
 
